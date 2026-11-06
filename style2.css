@@ -1,0 +1,222 @@
+{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ font-family:Arial, sans-serif;
+ background-color:#ff9999;
+}
+
+#container{
+ width:90%;
+ max-width:1000px;
+ margin:auto;
+ background-color:#ff2288;
+}
+
+/*Header*/
+
+#head{
+ background-color:#ff5566;
+ color:white;
+ text-align:center;
+ padding:30px;
+}
+
+/*Meny*/
+
+#nav{
+ background-color:#ff3388;
+}
+
+.menu{
+ list-style:none;
+ display:flex;
+ justify-content:center;
+}
+
+.menu li{
+ position:relative;
+}
+
+.menu li a{
+ display:block;
+ color:white;
+ background-color:#ff5577;
+ text-decoration:none;
+ padding:15px 25px;
+ transition:background-color 0.3s;
+}
+
+.menu li a:hover{
+ background-color:pink;
+}
+
+/*Dropdown*/
+.submenu{
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ min-width:200px;
+ background-color:#ff4488;
+ list-style:none;
+}
+.submenu li a{
+ padding:12px;
+ border-bottom:1px solid #444;
+}
+.menu li:hover .submenu{
+ display:block;
+}
+
+/*Innehåll*/
+
+#content{
+ padding:25px;
+ min-height:300px;
+}
+
+#content h2{
+ margin-bottom:15px;
+ color:#0066cc;
+}
+
+#content p{
+ margin-bottom:15px;
+ line-height:1.6;
+}
+
+/*Footer*/
+
+#foot{
+ background-color:#333;
+ color:white;
+ text-align:center;
+ padding:15px;
+}
+
+/*Mobilanpassning*/
+
+@media screen and (max-width:768px){
+
+ .menu{
+  flex-direction:column;
+ }
+
+ .submenu{
+  position:static;
+  width:100%
+ }
+
+ .menu li:hover .submenu{
+  display:block;
+ }
+}
+
+/*FORMULÄR*/
+
+.kontaktForm {
+ width: 100%;
+ max-width: 700px;
+ margin: 20px auto;
+ background-color: #ff8899;
+ padding: 25px;
+ box-shadow: 0 0 10px rgba(0,0,0.15);
+}
+
+.kontaktForm label {
+ display: block;
+ margin-top: 10px;
+ margin-bottom: 15px;
+ font-weight: bold;
+ color: #ffffff;
+}
+
+.kontaktForm input,
+.kontaktForm select,
+.kontaktForm textarea {
+ width: 100%;
+ padding: 12px;
+ border: 0.5px solid #cccccc;
+ border-radius: 9px;
+ font-size: 16px;
+ color: #001155;
+}
+
+.kontaktForm textarea {
+ resize: vertical;
+}
+
+.kontaktForm input:focus,
+.kontaktForm select:focus,
+.kontaktForm textarea:focus {
+ outline: none;
+ border-color: #0066cc;
+ box-shadow: 0 0 5px rgba(0.102,204,0.5);
+}
+
+.kontaktForm input[type="submit"]{
+ margin-top: 20px;
+ background-color: #ff5577;
+ color: white;
+ border: none;
+ cursor: pointer;
+ font-weight: bold;
+ transition: 0.3s;
+}
+
+.kontaktForm input[type="submit"]:hover{
+ background-color: #ff5577;
+}
+
+/*Mobilanpassning*/
+@media screen and (max-width: 768px){
+
+ .kontaktForm{
+  padding: 15px;
+  }
+
+ .kontaktForm input,
+ .kontaktForm select,
+ .kontaktForm textarea{
+  font-size: 14px
+ }
+
+}
+
+/*Tabell*/
+
+.mobilTabell {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 15px;
+ font-family; Arial, sans-serif;
+}
+
+.mobilTabell th {
+ background-color: #0066cc;
+ color: white;
+ padding: 12px;
+ border: 1px solid #003366;
+}
+
+.mobilTabell td {
+ padding: 10px;
+ border: 1px solid #cccccc;
+}
+
+.mobilTabell tr:nth-child(even) {
+ background-color: #f2f2f2;
+}
+
+.mobilTabell tr:hover {
+ background-color: #ff5599;
+}
+
+.mobilBild {
+ width: 100px;
+ height: auto;
+}

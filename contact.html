@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Saltnäs Mobilshop </title>
+
+  <!-- Länk till extern CSS-fil -->
+ <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+<div id="container">
+ <header id="head">
+  <h1> Kontakta oss </h1>
+  <p>
+   Vill du förbeställa en ny mobilmodell eller annan produkt?
+   Fyll i formuläret nedan så kontaktar vi dig så snart som möjligt.
+  </p>
+
+ </header>
+ <nav id="nav">
+  <ul class="menu">
+   <li>
+    <a href="phones.html"> Mobiltelefoner </a>
+    <ul class="submenu">
+     <li> <a href="apple.html"> Apple </a> </li>
+     <li> <a href="samsung.html"> Samsung </a> </li>
+     <li> <a href="google.html"> Google Pixel </a> </li>
+     <li> <a href="oneplus.html"> OnePlus </a> </li>
+    </ul>
+   </li>
+
+   <li>
+    <a href="abonnemang.html"> Abonnemang </a>
+    <ul class="submenu">
+     <li> <a href="private.html"> Privat </a> </li>
+     <li> <a href="company.html"> Företag </a> </li>
+     <li> <a href="family.html"> Familj </a> </li>
+     <li> <a href="cashcard.html"> Kontaktkort </a> </li>
+    </ul>
+   </li>
+
+   <li>
+    <a href="tillbehör.html"> Tillbehör </a>
+    <ul class="submenu">
+     <li> <a href="shell.html"> Skal </a> </li>
+     <li> <a href="charger.html"> Laddare </a> </li>
+     <li> <a href="headphones.html"> Hörlurar </a> </li>
+     <li> <a href="powerbank.html"> Powerbanks </a> </li>
+    </ul>
+   </li>
+
+   <li>
+    <a href="support.html"> Support </a>
+    <ul class="submenu">
+     <li> <a href="reparation.html"> Reparationer </a> </li>
+     <li> <a href="waranty.html"> Garantier </a> </li>
+     <li> <a href="question.html"> Vanliga frågor </a> </li>
+     <li> <a href="contact.html"> Kontakt </a> </li>
+    </ul>
+   </li>
+  </ul>
+ </nav>
+
+ <main id="content">
+  <h2> Välkommen till Saltnäs Mobilshop AB </h2>
+  <p>
+   Vi erbjuder moderna mobiltelefoner, abonnemang och tillbehör från marknadens främsta tillverkare.
+  </p>
+  <p>
+   Utforska vårt sortiment via menyerna ovan.
+  </p>
+
+  <form class="kontaktForm">
+
+   <label for="telefon">Telefonnummer</label>
+   <input type="tel" id="telefon" name="telefon" required
+
+   <label for="email">E-postaddres</label>
+   <input type="email" id="email" name="email" required
+
+   <label for="kategori">Vad vill du beställa?</label>
+   <select id="kategori" name="kategori">
+    <option> Ny mobilmodell </option>
+    <option> Surfplatta </option>
+    <option> Smartwatch </option>
+    <option> Laddare </option>
+    <option> Skal </option>
+    <option> Hörlurar </option>
+    <option> Annan prdukt </option>
+   </select>
+
+   <label for="antal">Antal</label>
+   <input type="number" id="antal" name="antal" min="1" value="1">
+
+   <label for="meddelande">Övrig information </label>
+   <textarea id="meddelande" name="meddelande" rows="5" placeholder="Skriv önskad färg, lagringsstorlek eller annan information här..."></textarea>
+
+   <input type="submit" value="Skicka förbeställning">
+
+  </form>
+
+ </main>
+
+ <footer id="foot">
+  <p> &copy; 2026 Saltnäs Mobilshop AB </p>
+ </footer>
+
+</div>
+</body>
+</html>
